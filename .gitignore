@@ -1,3 +1,9 @@
+# resource folder on MacOS
+.DS_Store/
+
+# VisualStudio Code configuration
+/.vscode/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -126,3 +132,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# exclude the data/ directory
+# (preferred location for wiz.io report files)
+/data/
