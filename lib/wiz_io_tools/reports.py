@@ -7,6 +7,10 @@ from typing import List
 from wiz_io_tools.data.issue    import Issue
 from wiz_io_tools.data.resource import Resource
 
+
+LH = logging.getLogger()
+
+
 def parse_issue_record(record):
     issue = Issue()
     issue.created_at           = record['Created At']
@@ -38,7 +42,7 @@ def parse_resource_record(record):
     return resource
 
 def parse_issues_report(csvfile) -> List[Issue]:
-    print(f"I: Parsing report '{csvfile}'.")
+    LH.info("Parsing report '%s'.", csvfile)
 
     with open(csvfile, mode='r', newline='') as fh:
         rh = csv.DictReader(fh, delimiter=',', quotechar='"')
