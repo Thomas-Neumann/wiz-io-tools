@@ -86,7 +86,7 @@ def get_issuecounts(oauth_token):
     #         'cloudAccounts': {
     #             'nodes': [
     #                 {
-    #                     'accountName': 'aws-repo-npn',
+    #                     'accountName': 'aws-account1-npn',
     #                     'provider': 'AWS',
     #                     'status': 'CONNECTED',
     #                     'lastScan': '2022-04-04T04:28:27Z',
